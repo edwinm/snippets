@@ -27,14 +27,16 @@ Basic HTML to start a website
 ## HTML section elements
 
 Make your HTML more semantic by using the right elements.
-
-| 1 | main | Main content of the page, without header and footer etcetera |
-| 2 | article | Part of the page that could stand alone |
-| 3 | section | Group related elements together |
-| 4 | header | Title, subtitle, author, publication date |
-| 5 | footer | Copyright, privacy statement, contact data |
-| 6 | nav | Page and site navigation with links |
-| 7 | aside | Content that's supplementary to the main content |
+       
+element | description
+--- | ---
+main | Main content of the page, without header and footer etcetera
+article | Part of the page that could stand alone
+section | Group related elements together
+header | Title, subtitle, author, publication date
+footer | Copyright, privacy statement, contact data
+nav | Page and site navigation with links
+aside | Content that's supplementary to the main content
 
 
 ## Box sizing
