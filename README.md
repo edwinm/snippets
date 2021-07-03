@@ -28,13 +28,13 @@ Basic HTML to start a website
 
 Make your HTML more semantic by using the right elements.
 
-| main | Main content of the page, without header and footer etcetera
-| article | Part of the page that could stand alone
-| section | Group related elements together
-| header | Title, subtitle, author, publication date
-| footer | Copyright, privacy statement, contact data
-| nav | Page and site navigation with links
-| aside | Content that's supplementary to the main content
+> | main | Main content of the page, without header and footer etcetera
+> | article | Part of the page that could stand alone
+> | section | Group related elements together
+> | header | Title, subtitle, author, publication date
+> | footer | Copyright, privacy statement, contact data
+> | nav | Page and site navigation with links
+> | aside | Content that's supplementary to the main content
 
 
 ## Box sizing
@@ -120,6 +120,18 @@ Make a top level element behave it's not there.
 }
 ```
 
+## Remove button styles
+
+Works in all modern browsers.
+
+```css
+.some-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+```
+
 ## Only show focus when applicable
 
 Don't show focus outlines for mouse users. Note that `<inpu>` and `<textarea>` will always apply the `focus-visible` style.
@@ -136,7 +148,29 @@ button:focus-visible {
 
 ## Provide "alt" to background image
 
+Note: make sure to keep the element empty.
+
 ```html
 <div class="background-image" role="img" aria-label="Alt text"></div>
 ```
 
+## Remove semantics
+
+Remove the semantics from an element
+
+```html
+<h2 role=presentation>Large text, but not a heading</h2>
+```
+
+## Toggle buttons
+
+Make it clear when buttons are toggled on or off.
+
+```html
+<ol role="tablist">
+  <li><button role="tab" aria-selected="false">One</button></li>
+  <li><button role="tab" aria-selected="true">Two</button></li>
+</ol>
+```
+
+See also [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/)
