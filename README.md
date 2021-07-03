@@ -24,6 +24,19 @@ Basic HTML to start a website
 
 ```
 
+## HTML section elements
+
+Make your HTML more semantic by using the right elements.
+
+| main | Main content of the page, without header and footer etcetera
+| article | Part of the page that could stand alone
+| section | Group related elements together
+| header | Title, subtitle, author, publication date
+| footer | Copyright, privacy statement, contact data
+| nav | Page and site navigation with links
+| aside | Content that's supplementary to the main content
+
+
 ## Box sizing
 
 Box sizing border box is easier to work with.
@@ -106,3 +119,24 @@ Make a top level element behave it's not there.
   pointer-events: none;
 }
 ```
+
+## Only show focus when applicable
+
+Don't show focus outlines for mouse users. Note that `<inpu>` and `<textarea>` will always apply the `focus-visible` style.
+
+```css
+button {
+  outline: none;
+}
+
+button:focus-visible {
+   outline: 1px solid steelblue;
+}
+```
+
+## Provide "alt" to background image
+
+```html
+<div class="background-image" role="img" aria-label="Alt text"></div>
+```
+
