@@ -28,13 +28,13 @@ Basic HTML to start a website
 
 Make your HTML more semantic by using the right elements.
 
-> | main | Main content of the page, without header and footer etcetera
-> | article | Part of the page that could stand alone
-> | section | Group related elements together
-> | header | Title, subtitle, author, publication date
-> | footer | Copyright, privacy statement, contact data
-> | nav | Page and site navigation with links
-> | aside | Content that's supplementary to the main content
+: | main | Main content of the page, without header and footer etcetera
+: | article | Part of the page that could stand alone
+: | section | Group related elements together
+: | header | Title, subtitle, author, publication date
+: | footer | Copyright, privacy statement, contact data
+: | nav | Page and site navigation with links
+: | aside | Content that's supplementary to the main content
 
 
 ## Box sizing
