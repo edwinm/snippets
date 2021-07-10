@@ -102,6 +102,20 @@ Define a custom font. All modern browsers support WOFF2.
 }
 ```
 
+## Line clamp
+
+Like `text-overflow: ellipsis`, but for multiple lines.
+
+```css
+.box {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+```
+
 ## Prevent click delays
 
 Don't wait for possible double click.
