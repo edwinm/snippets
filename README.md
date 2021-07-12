@@ -190,3 +190,23 @@ Make it clear when buttons are toggled on or off.
 ```
 
 See also [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/)
+
+## Copy paste characters
+
+Some symbols are hard to type and sometimes you want to know the HTML entity code.
+
+name | entity code | character
+--- | --- | ---
+Degree sign| &deg; | °
+Horizontal ellipsis | &hellip; | …
+Bullet | &bullet; | •
+Multiplication sign | &times; | ×
+Euro sign | &euro; | €
+Single left quotation mark | &lsquo; | ‘
+Single right quotation mark | &rsquo; | ’
+Single low-9 quotation mark | &lsquor; | ‚
+Double left quotation mark  | &ldquo; | “
+Double right quotation mark | &rdquo; | ”
+Double low-9 quotation mark | &ldquor; | „
+
+See also [Character Entity Reference Chart](https://dev.w3.org/html5/html-author/charref)
