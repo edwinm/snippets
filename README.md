@@ -102,6 +102,29 @@ Define a custom font. All modern browsers support WOFF2.
 }
 ```
 
+## Responsive design
+
+Every webpage should look good on desktop, tablet and mobile.
+
+```css
+/* Mobile */
+.box {
+  padding: 10px;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .box {
+    padding: 40px;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .box {
+      padding: 80px;
+    }
+}
+```
+
 ## Line clamp
 
 Like `text-overflow: ellipsis`, but for multiple lines.
