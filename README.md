@@ -13,7 +13,7 @@ Basic HTML to start a website
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Description">
-    <link rel="stylesheet" href="/weblog/style.css">
+    <link rel="stylesheet" href="style.css">
     <script async src='script.js'></script>
 </head>
 <body>
