@@ -102,6 +102,22 @@ Define a custom font. All modern browsers support WOFF2.
 }
 ```
 
+## Font weights
+
+Which font weight number belongs to which font weight name.
+
+css | name
+--- | ---
+100 | Thin
+300 | Light
+350 | Book
+400 (normal)| Normal/Regular
+500 | Medium
+600 | Semi Bold/Demi Bold
+700 (bold)| Bold
+800 | Extra Bold/Ultra Bold
+900 | Black/Heavy
+
 ## Responsive design
 
 Every webpage should look good on desktop, tablet and mobile.
@@ -151,7 +167,7 @@ Don't wait for possible double click.
 
 ## Click through top element
 
-Make a top level element behave it's not there.
+Make a top level element behave like it's not there.
 
 ```css
 .box {
@@ -187,7 +203,7 @@ button:focus-visible {
 
 ## Provide "alt" to background image
 
-Note: make sure to keep the element empty.
+Note: don't include text in this element.
 
 ```html
 <div class="background-image" role="img" aria-label="Alt text"></div>
@@ -198,7 +214,7 @@ Note: make sure to keep the element empty.
 Remove the semantics from an element
 
 ```html
-<h2 role=presentation>Large text, but not a heading</h2>
+<h2 role="presentation">Large text, but not a heading</h2>
 ```
 
 ## Toggle buttons
