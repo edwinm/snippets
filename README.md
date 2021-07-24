@@ -141,6 +141,29 @@ Every webpage should look good on desktop, tablet and mobile.
 }
 ```
 
+## CSS stylable icons
+
+Change color, background, border, and size of an icon with CSS. Use a white svg.
+
+```html
+  <svg
+    viewBox="0 0 100 100"
+    aria-label="my icon label"
+  >
+    <defs>
+      <mask id="mask-id">
+        <image xlink:href="/path/to/icon.svg" width="100" height="100" />
+      </mask>
+    </defs>
+    <rect
+      width="100"
+      height="100"
+      style="fill: currentColor"
+      mask="url(#mask-id)"
+    />
+  </svg>
+```
+
 ## Line clamp
 
 Like `text-overflow: ellipsis`, but for multiple lines.
