@@ -200,13 +200,12 @@ Make a top level element behave like it's not there.
 
 ## Remove button styles
 
-Works in all modern browsers.
+Works with other (ui) elements and in all modern browsers.
 
 ```css
-.some-button {
-  padding: 0;
-  border: none;
-  background: transparent;
+button.my-style {
+  all: initial;
+  /* my styles… */
 }
 ```
 
