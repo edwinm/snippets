@@ -214,12 +214,12 @@ button.my-style {
 Don't show focus outlines for mouse users. Note that `<inpu>` and `<textarea>` will always apply the `focus-visible` style.
 
 ```css
-button {
+* {
   outline: none;
 }
 
-button:focus-visible {
-   outline: 1px solid steelblue;
+:focus-visible {
+  outline: 1px solid #00A1F1;
 }
 ```
 
