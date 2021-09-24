@@ -245,14 +245,6 @@ Don't show focus outlines for mouse users. Note that `<inpu>` and `<textarea>` w
 }
 ```
 
-### Use rel=noopener
-
-When opening a link in a new window/tab, use rel=noopener. See also [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
-
-```html
-<a href="https://example.com" target="_blank" rel="noopener">Example</a>
-```
-
 ## Provide "alt" to background image
 
 Note: don't include text in this element.
