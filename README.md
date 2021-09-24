@@ -200,11 +200,33 @@ Make a top level element behave like it's not there.
 
 ## Remove button styles
 
-Works with other (ui) elements and in all modern browsers.
+Also works with other (ui) elements.
+
+```css
+button.my-style {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  /* my styles… */
+}
+```
+
+You can also reset all styles. Note that this also removes your own inherited styles.
 
 ```css
 button.my-style {
   all: initial;
+  /* my styles… */
+}
+```
+
+Use flexbox to show text at the top of the button, to make it exchangeable with a `<div>`.
+
+```css
+button.my-style {
+  /* other reset styles… */
+  display: inline-flex;
+  align-items: flex-start;
   /* my styles… */
 }
 ```
