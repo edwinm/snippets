@@ -38,6 +38,7 @@ footer | Copyright, privacy statement, contact data
 nav | Page and site navigation with links
 aside | Content that's supplementary to the main content
 
+You can add an `aria-label` attribute to describe the section.
 
 ## Box sizing
 
