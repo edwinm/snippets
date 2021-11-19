@@ -1,4 +1,4 @@
-# snippets
+# Frontend snippets
 Miscellaneous code snippets for web developers because you can't memorize everything.
 
 ## Webpage
