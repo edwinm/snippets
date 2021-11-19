@@ -280,6 +280,41 @@ Make it clear when buttons are toggled on or off.
 
 See also [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/)
 
+## Scrollbar styling
+
+You can style the scrollbar, but this is very browser and operating system dependent,
+so test where necessary.
+Apply both classes (`scrollbar-style1` and `styled-scrollbar`) to your container.
+
+```
+/* Custom style with configurable parameters */
+.scrollbar-style1 {
+  overflow: auto; /* enable automatic scrollbars */
+  scrollbar-width: thin; /* none, thin or auto (Firefox) */
+  --scrollbar-size: 8px; /* 8px when using thin (Webkit) */
+  --scrollbar-color: lightblue;
+  --scrollbar-thumb-color: blue;
+  --scrollbar-thumb-rect: 1; /* add this line for a rectangular thumb (Webkit) */
+}
+
+/* You can leave the code below as is */
+.styled-scrollbar {
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-color, transparent);
+}
+
+/* WebKit and Chromiums */
+.styled-scrollbar::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+  background-color: var(--scrollbar-color);
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: calc(99px - var(--scrollbar-thumb-rect, 0) * 99px);
+}
+```
+
 ## Copy paste characters
 
 Some symbols are hard to type and sometimes you want to know the HTML entity code.
