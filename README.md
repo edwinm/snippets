@@ -91,7 +91,7 @@ Simple CSS animation using transform and transition.
 
 For good performance, only animate `transform` and `opacity`.
 If performance is still not good, take a look at
-the `[will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)` property.
+the [`will-change`](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change) property.
 
 
 ## Custom font
