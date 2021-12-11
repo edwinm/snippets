@@ -240,10 +240,11 @@ button.my-style {
 ## Only show focus when applicable
 
 Don't show focus outlines for mouse users. Note that `<input>` and `<textarea>` will always apply the `focus-visible` style.
+Use `transparent` as a standard color, as this will become visible in high contrast mode.
 
 ```css
 * {
-  outline: none;
+  outline-color: transparent;
 }
 
 :focus-visible {
