@@ -86,13 +86,39 @@ Simple CSS animation using transform and transition.
 .block.moved {
   transform: translateX(200px);
 }
-
 ```
 
 For good performance, only animate `transform` and `opacity`.
 If performance is still not good, take a look at
 the [`will-change`](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change) property.
 
+## Prefers reduced motion / prefers contrast
+
+Improve the accessibility of your website by reducing animations when requested:
+
+```css
+@media (prefers-reduced-motion) {  
+  * {
+    transition-property: none;
+  }
+}
+```
+
+Or increase contrast:
+
+```css
+html {
+    color: #ccc;
+    background-color: white;
+}
+@media (prefers-contrast: more) {
+    html {
+        color: black;
+    }
+}
+```
+
+Note: make sure contrast is always good, even without this media query.
 
 ## Custom font
 
