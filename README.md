@@ -239,7 +239,7 @@ button.my-style {
 
 ## Only show focus when applicable
 
-Don't show focus outlines for mouse users. Note that `<inpu>` and `<textarea>` will always apply the `focus-visible` style.
+Don't show focus outlines for mouse users. Note that `<input>` and `<textarea>` will always apply the `focus-visible` style.
 
 ```css
 * {
