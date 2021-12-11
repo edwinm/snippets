@@ -147,6 +147,23 @@ Every webpage should look good on desktop, tablet and mobile.
 }
 ```
 
+## Dark mode
+
+Switch your color scheme to match the light or dark mode of the user.
+
+```css
+html {
+    color: black;
+    background-color: white;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+      color: white;
+      background-color: black;
+  }
+}
+```
+
 ## CSS stylable icons
 
 Change color, background, border, and size of an icon with CSS. Use a white svg.
