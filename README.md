@@ -73,6 +73,18 @@ abbr, acronym, blockquote, q {
 }
 ```
 
+## Social media sharing
+
+Show an image and description when sharing on social media (Facebook, Twitter, LinkedIn, etcetera).
+
+```html
+  <meta name="description"
+        content="Description of max 200 characters">
+  <meta property="og:image" content="https://url-to-image">
+  <meta property="og:image:width" content="476">
+  <meta property="og:image:height" content="249">
+```
+
 ## CSS animation
 
 Simple CSS animation using transform and transition.
