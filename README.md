@@ -212,6 +212,18 @@ Change color, background, border, and size of an icon with CSS. Use a white svg.
     />
   </svg>
 ```
+## Truncate with ellipsis
+
+Instead of wrapping a text, show ...
+
+```css
+.text {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+```
 
 ## Line clamp
 
