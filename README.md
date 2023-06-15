@@ -346,6 +346,14 @@ Make it clear when buttons are toggled on or off.
 </ol>
 ```
 
+Then you can also use the `aria-selected` attribute for styling:
+
+```css
+[aria-selected='true'] {
+    background-color: mintcream;
+}
+```
+
 See also [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/)
 
 ## Scrollbar styling
