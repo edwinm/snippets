@@ -104,6 +104,27 @@ For good performance, only animate `transform` and `opacity`.
 If performance is still not good, take a look at
 the [`will-change`](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change) property.
 
+## Animate to auto height
+
+In CSS, you can't just animate any element to auto height.
+By using a grid row, you can.
+
+```css
+.container {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 250ms;
+}
+
+.container > .inner {
+  overflow: hidden;
+}
+
+.container:hover {
+  grid-template-rows: 1fr;
+}
+```
+
 ## Prefers reduced motion / prefers contrast
 
 Improve the accessibility of your website by reducing animations when requested:
