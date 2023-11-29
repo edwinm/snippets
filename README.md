@@ -27,7 +27,7 @@ Basic HTML to start a website
 ## HTML section elements
 
 Make your HTML more semantic by using the right elements.
-       
+
 element | description
 --- | ---
 main | Main content of the page, without header and footer etcetera
@@ -39,6 +39,72 @@ nav | Page and site navigation with links
 aside | Content that's supplementary to the main content
 
 You can add an `aria-label` attribute to describe the section.
+
+## Autofill
+
+Use the `autocomplete` attribute in your forms so that users can easily fill them out.
+Use one of the following values for the `autocomplete` attribute to enable the user the auto fill them.
+
+<div style="columns: 4">
+name
+honorific-prefix
+given-name
+additional-name
+family-name
+honorific-suffix
+nickname
+username
+new-password
+current-password
+one-time-code
+organization-title
+organization
+street-address
+address-line1
+address-line2
+address-line3
+address-level4
+address-level3
+address-level2
+address-level1
+country
+country-name
+postal-code
+cc-name
+cc-given-name
+cc-additional-name
+cc-family-name
+cc-number
+cc-exp
+cc-exp-month
+cc-exp-year
+cc-csc
+cc-type
+transaction-currency
+transaction-amount
+language
+bday
+bday-day
+bday-month
+bday-year
+sex
+url
+photo
+</div>
+
+For addresses, you can also add `shipping` and `billing` and for phone numbers, you can add `home`, `work`, `mobile`, `fax` or `pager`.
+
+```html
+<input name="shipping-pc" autocomplete="shipping postal-code">
+```
+
+Using `new-password` and `current-password` is especially important to make a site work nicely with password managers.
+
+When using `new-password`, you can use the non standard `passwordrules` attribute to specify the rules for a valid password.
+See Apple's [Password Rules Validation Tool](https://developer.apple.com/password-rules/).
+
+See the [autofill attribute specification](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill)
+for all possibilities.
 
 ## Box sizing
 
@@ -130,7 +196,7 @@ By using a grid row, you can.
 Improve the accessibility of your website by reducing animations when requested:
 
 ```css
-@media (prefers-reduced-motion) {  
+@media (prefers-reduced-motion) {
   * {
     transition-property: none;
   }
