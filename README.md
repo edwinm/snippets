@@ -47,7 +47,7 @@ Use one of the following values for the `autocomplete` attribute to enable the u
 
 <details>
 <summary>See list of autocomplete attribute values</summary>
-```
+<pre>
 name
 honorific-prefix
 given-name
@@ -92,7 +92,7 @@ bday-year
 sex
 url
 photo
-```
+</pre>
 </details>
 
 
