@@ -45,7 +45,10 @@ You can add an `aria-label` attribute to describe the section.
 Use the `autocomplete` attribute in your forms so that users can easily fill them out.
 Use one of the following values for the `autocomplete` attribute to enable the user the auto fill them.
 
-<div style="columns: 4">
+<table>
+<tr>
+<td>
+```
 name
 honorific-prefix
 given-name
@@ -69,6 +72,10 @@ address-level2
 address-level1
 country
 country-name
+```
+</td>
+<td>
+```
 postal-code
 cc-name
 cc-given-name
@@ -90,7 +97,10 @@ bday-year
 sex
 url
 photo
-</div>
+```
+</td>
+</tr>
+</table>
 
 For addresses, you can also add `shipping` and `billing` and for phone numbers, you can add `home`, `work`, `mobile`, `fax` or `pager`.
 
