@@ -155,6 +155,8 @@ Show an image and description when sharing on social media (Facebook, Twitter, L
   <meta property="og:image:height" content="249">
 ```
 
+See the [Open Graph protocol](https://ogp.me/) for all possible metadata.
+
 ## CSS animation
 
 Simple CSS animation using transform and transition.
