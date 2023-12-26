@@ -484,6 +484,27 @@ Apply both classes (`scrollbar-style1` and `styled-scrollbar`) to your container
 }
 ```
 
+## Checklist
+
+Even when a site looks fine on first glance, it can still be broken.
+Check the list below to make sure the site is really ready to be published.
+
+- Check the site in Google Lighthouse and make sure the score is good
+- Is the site SEO friendly? Can it be found with search engines?
+- Test the site on various mobile devices (phones and tablets)
+- Has a proper 404 page been set up for when a invalid url is requested?
+- Some jurisdictions require contact/about/legal info pages
+- The back button always go to the previous page
+- Is the site accessible? Is the text easy to read? Can you use the site with keyboard only?
+- Does the site still work when the text is enlarged (CTRL-+ or Command-+)
+- Form fields use the autocomplete attribute
+- Every page has a different title (with the generic part at the end)
+- Don't forget the favicon
+- Add an image and description for when the site is shared on social media
+- Add a print style sheet for when it is expected the pages will be printed
+- Add the lang attribute
+- For international sites: the site works with browser autotranslation
+
 ## Copy paste characters
 
 Some symbols are hard to type and sometimes you want to know the HTML entity code.
