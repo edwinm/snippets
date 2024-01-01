@@ -153,6 +153,15 @@ Show an image and description when sharing on social media (Facebook, Twitter, L
   <meta property="og:image" content="https://url-to-image">
   <meta property="og:image:width" content="476">
   <meta property="og:image:height" content="249">
+  <meta property="og:image:alt" content="Description of image">
+```
+
+By default the page title will be taken from the title element, which often looks like "Page Title - Site Name".
+With meta tage, the page title and site name can be defined seperately:
+
+```html
+  <meta property="og:title" content="Page Title">
+  <meta property="og:site_name" content="Site Name">
 ```
 
 See the [Open Graph protocol](https://ogp.me/) for all possible metadata.
