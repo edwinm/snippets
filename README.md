@@ -157,7 +157,7 @@ Show an image and description when sharing on social media (Facebook, Twitter, L
 ```
 
 By default the page title will be taken from the title element, which often looks like "Page Title - Site Name".
-With meta tage, the page title and site name can be defined seperately:
+With meta tags, the page title and site name can be defined separately:
 
 ```html
   <meta property="og:title" content="Page Title">
