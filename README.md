@@ -166,6 +166,52 @@ With meta tags, the page title and site name can be defined separately:
 
 See the [Open Graph protocol](https://ogp.me/) for all possible metadata.
 
+## Progressive Web App
+
+Make your website behave like an app.
+With the code below, a user can add the website to their desktop or home screen
+and open it as an app without the browser chrome (so, no address bar etcetera).
+
+In your root directory, you need these two files:
+
+`apple-touch-icon.png` - The app icon with minial size of 192×192px
+`manifest.json` - Contains metadata of the app, see below
+
+This is the content of the `manifest.json` file:
+
+```json
+{
+    "short_name": "App name",
+    "name": "Full name of the app",
+    "start_url": "https://example.com/",
+    "description": "Description of the app: what does it do?",
+    "icons": [
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "display": "standalone",
+    "background_color": "#ffcccc",
+    "theme_color": "#ccccff",
+    "categories": ["weblog"]
+}
+```
+
+See [MDN: Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest) for more options.
+
+Now refer to these files from your HTML:
+
+```html
+<link rel="manifest" href="/manifest.json"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<meta name="theme-color" content="#ccccff">
+```
+
+You can make your site more app like by adding offline capabilities.
+See [Make your PWA feel more like an app](https://web.dev/articles/app-like-pwas) for more ideas.
+
 ## CSS animation
 
 Simple CSS animation using transform and transition.
