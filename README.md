@@ -174,11 +174,11 @@ and open it as an app without the browser chrome (so, no address bar etcetera).
 
 In your root directory, you need these two files:
 
-`apple-touch-icon.png` - The app icon with minial size of 192×192px
+`apple-touch-icon.png` - The app icon with a minimal size of 192×192px
 
 `manifest.json` - Contains metadata of the app, see below
 
-This is the content of the `manifest.json` file:
+This is example content of the `manifest.json` file:
 
 ```json
 {
