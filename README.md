@@ -540,6 +540,23 @@ Apply both classes (`scrollbar-style1` and `styled-scrollbar`) to your container
 }
 ```
 
+## RSS feed
+
+If your site has an RSS (or Atom) feed, make it discoverable for RSS readers.
+Put the following code in your HTML head.
+
+Example for a RSS feed:
+
+```html
+<link rel="alternate" type="application/rss+xml" title="My site name" href="https://example.com/feed.rss.xml" />
+```
+
+Example for an Atom feed:
+
+```html
+<link rel="alternate" type="application/atom+xml" title="My site name" href="https://example.com/feed.atom.xml" />
+```
+
 ## Checklist
 
 Even when a site looks fine on first glance, it can still be broken.
