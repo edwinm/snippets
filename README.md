@@ -12,7 +12,7 @@ Basic HTML to start a website
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Description">
+    <meta name="description" content="Description of around 200 letters">
     <link rel="stylesheet" href="style.css">
     <script async src='script.js'></script>
 </head>
@@ -21,8 +21,9 @@ Basic HTML to start a website
 
 </body>
 </html>
-
 ```
+
+If your site is not English, don't forget to change the `lang` attribute.
 
 ## HTML section elements
 
@@ -545,7 +546,7 @@ Apply both classes (`scrollbar-style1` and `styled-scrollbar`) to your container
 If your site has an RSS (or Atom) feed, make it discoverable for RSS readers.
 Put the following code in your HTML head.
 
-Example for a RSS feed:
+Example for an RSS feed:
 
 ```html
 <link rel="alternate" type="application/rss+xml" title="My site name" href="https://example.com/feed.rss.xml" />
