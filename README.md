@@ -144,6 +144,22 @@ abbr, acronym, blockquote, q {
 }
 ```
 
+## Favicon
+
+You can put a favicon.ico in the root of your site and call it a day.
+
+Make sure favicon.ico contains both a 16×16 and 32×32 icon.
+
+If you want to provide an SVG, you can use the code below.
+
+```html
+<link rel="icon" href="/favicon.ico" sizes="48x48" >
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+```
+
+See [Definitive edition of "How to Favicon" in 2023](https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7)
+by Masa Kudamatsu for more in depth information.
+
 ## Social media sharing
 
 Show an image and description when sharing on social media (Facebook, Twitter, LinkedIn, etcetera).
