@@ -584,7 +584,7 @@ Check the list below to make sure the site is really ready to be published.
 - Test the site on various mobile devices (phones and tablets)
 - Has a proper 404 page been set up for when a invalid url is requested?
 - Some jurisdictions require contact/about/legal info pages
-- The back button always go to the previous page
+- The back button always goes to the previous page
 - Is the site accessible? Is the text easy to read? Can you use the site with keyboard only?
 - Does the site still work when the text is enlarged (CTRL-+ or Command-+)
 - Form fields use the autocomplete attribute
