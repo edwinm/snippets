@@ -370,26 +370,40 @@ html {
 
 ## CSS stylable icons
 
-Change color, background, border, and size of an icon with CSS. Use a white svg.
+Makes the color of the svg the same as the surrounding text. Use a black svg.
 
 ```html
   <svg
-    viewBox="0 0 100 100"
-    aria-label="my icon label"
+      viewBox="0 0 100 100"
+      aria-label="my icon label"
   >
-    <defs>
-      <mask id="mask-id">
-        <image xlink:href="/path/to/icon.svg" width="100" height="100" />
-      </mask>
-    </defs>
-    <rect
-      width="100"
-      height="100"
-      style="fill: currentColor"
-      mask="url(#mask-id)"
-    />
+      <filter id="invert">
+          <feColorMatrix in="SourceGraphic" type="matrix" values="
+               -1  0  0  0  1
+                0 -1  0  0  1
+                0  0 -1  0  1
+                0  0  0  1  0"/>
+      </filter>
+      <defs>
+          <mask id="mask-id-myicon">
+              <image xlink:href="/path/to/myicon.svg"/>
+          </mask>
+      </defs>
+      <rect
+          width="100"
+          height="100"
+          style="fill: currentColor"
+          mask="url(#mask-id-myicon)"
+      />
   </svg>
 ```
+
+If you use an svg sprite, you can replace the `image` tag with the `use` tag:
+
+```html
+              <use xlink:href="/path/to/sprite.svg#myicon" filter="url(#invert)"></use>
+```
+
 ## Truncate with ellipsis
 
 Instead of wrapping a text, show ...
