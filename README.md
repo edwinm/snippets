@@ -351,6 +351,23 @@ Every webpage should look good on desktop, tablet and mobile.
 }
 ```
 
+## UI colors
+
+Adjust the styling of UI elements and interactions.
+
+```css
+
+div {
+    accent-color: lime; /* Color of UI elements */
+    caret-color: blue; /* Color of caret (text cursor) */
+}
+
+div::selection { /* Styling of selected text */
+    color: black;
+    background-color: orange;
+}
+```
+
 ## Dark mode
 
 Switch your color scheme to match the light or dark mode of the user.
