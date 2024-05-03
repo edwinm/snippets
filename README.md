@@ -518,6 +518,26 @@ Use `transparent` as a standard color, as this will become visible in high contr
 }
 ```
 
+## Conditional hover
+
+Some devices like mobiles might not have hover and change the style to compensate.
+
+```css
+div {
+    /* styles when hover is not supported */
+}
+
+@media (hover) {
+    div {
+        /* styles when hover is supported */
+    }
+
+    div:hover {
+        /* styles with hover */
+    }
+}
+```
+
 ## Provide "alt" to background image
 
 Note: don't include text in this element.
