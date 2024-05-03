@@ -385,6 +385,8 @@ html {
 }
 ```
 
+If you have your own toggle, then don't forget to set the `color-scheme` property, so UI elements will adapt to the theme.
+
 ## CSS stylable icons
 
 Makes the color of the svg the same as the surrounding text. Use a black svg.
