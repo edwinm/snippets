@@ -450,26 +450,6 @@ Like `text-overflow: ellipsis`, but for multiple lines.
 }
 ```
 
-## Prevent click delays
-
-Don't wait for possible double click.
-
-```css
-.box {
-  touch-action: manipulation;
-}
-```
-
-## Click through top element
-
-Make a top level element behave like it's not there.
-
-```css
-.box {
-  pointer-events: none;
-}
-```
-
 ## Remove button styles
 
 Also works with other (ui) elements.
@@ -537,6 +517,19 @@ div {
     }
 }
 ```
+
+
+## Useful but lesser known CSS features
+
+property | value | use
+--- | --- | ---
+touch-action | manipulation | Prevent click delay by not waiting for possible double click 
+pointer-events | none | Make a top level element behave like it's not there
+object-fit | cover | Specify how an image should be shown in an img element
+user-select | none | Prevents text to be selected
+aspect-ratio | 9 / 16 | Specify aspect ratio of the element
+
+
 
 ## Provide "alt" to background image
 
