@@ -392,40 +392,40 @@ If you have your own toggle, then don't forget to set the `color-scheme` propert
 Makes the color of the svg the same as the surrounding text. Use a black svg.
 
 ```html
-  <svg
-      viewBox="0 0 100 100"
-      aria-label="my icon label"
-  >
-      <filter id="invert">
-          <feColorMatrix in="SourceGraphic" type="matrix" values="
-               -1  0  0  0  1
-                0 -1  0  0  1
-                0  0 -1  0  1
-                0  0  0  1  0"/>
-      </filter>
-      <defs>
-          <mask id="mask-id-myicon">
-              <image xlink:href="/path/to/myicon.svg"/>
-          </mask>
-      </defs>
-      <rect
-          width="100"
-          height="100"
-          style="fill: currentColor"
-          mask="url(#mask-id-myicon)"
-      />
-  </svg>
+<svg
+  viewBox="0 0 100 100"
+  aria-label="my icon label"
+>
+  <filter id="invert">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="
+           -1  0  0  0  1
+            0 -1  0  0  1
+            0  0 -1  0  1
+            0  0  0  1  0"/>
+  </filter>
+  <defs>
+      <mask id="mask-id-myicon">
+          <image xlink:href="/path/to/myicon.svg"/>
+      </mask>
+  </defs>
+  <rect
+      width="100"
+      height="100"
+      style="fill: currentColor"
+      mask="url(#mask-id-myicon)"
+  />
+</svg>
 ```
 
 If you use an svg sprite, you can replace the `image` tag with the `use` tag:
 
 ```html
-              <use xlink:href="/path/to/sprite.svg#myicon" filter="url(#invert)"></use>
+<use xlink:href="/path/to/sprite.svg#myicon" filter="url(#invert)"></use>
 ```
 
 ## Truncate with ellipsis
 
-Instead of wrapping a text, show ...
+Instead of wrapping a text, show an ellipsis (…)
 
 ```css
 .text {
@@ -436,9 +436,7 @@ Instead of wrapping a text, show ...
 }
 ```
 
-## Line clamp
-
-Like `text-overflow: ellipsis`, but for multiple lines.
+Use line clamp but for multiple lines.
 
 ```css
 .box {
@@ -518,22 +516,20 @@ div {
 }
 ```
 
-
 ## Useful but lesser known CSS features
 
 property | value | use
 --- | --- | ---
 touch-action | manipulation | Prevent click delay by not waiting for possible double click 
 pointer-events | none | Make a top level element behave like it's not there
-object-fit | cover | Specify how an image should be shown in an img element
+object-fit | cover | Specify how an image should be shown in an `img` element
 user-select | none | Prevents text to be selected
 aspect-ratio | 9 / 16 | Specify aspect ratio of the element
 
-
-
 ## Provide "alt" to background image
 
-Note: don't include text in this element.
+> [!NOTE]  
+> Don't include text in this element.
 
 ```html
 <div class="background-image" role="img" aria-label="Alt text"></div>
