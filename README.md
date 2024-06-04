@@ -526,7 +526,7 @@ object-fit | cover | Specify how an image should be shown in an `img` element
 user-select | none | Prevents text to be selected
 aspect-ratio | 9 / 16 | Specify aspect ratio of the element
 
-## Provide "alt" to background image
+## Use aria-label to provide "alt" for background image
 
 > [!NOTE]  
 > Don't include text in this element.
@@ -534,6 +534,8 @@ aspect-ratio | 9 / 16 | Specify aspect ratio of the element
 ```html
 <div class="background-image" role="img" aria-label="Alt text"></div>
 ```
+
+The aria-label attribute has [much more](https://html5accessibility.com/stuff/2024/05/22/not-so-short-note-on-aria-label-usage-big-table-edition/) uses.
 
 ## Remove semantics
 
