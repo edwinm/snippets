@@ -389,38 +389,31 @@ If you have your own toggle, then don't forget to set the `color-scheme` propert
 
 ## CSS stylable icons
 
-Makes the color of the svg the same as the surrounding text. Use a black svg.
+Change the color of svg's with CSS.
+If you have multiple svg's, you can use [svg-sprite](https://www.npmjs.com/package/svg-sprite) to combine them
+in one single svg using the _view_ mode.
 
-```html
-<svg
-  viewBox="0 0 100 100"
-  aria-label="my icon label"
->
-  <filter id="invert">
-      <feColorMatrix in="SourceGraphic" type="matrix" values="
-           -1  0  0  0  1
-            0 -1  0  0  1
-            0  0 -1  0  1
-            0  0  0  1  0"/>
-  </filter>
-  <defs>
-      <mask id="mask-id-myicon">
-          <image xlink:href="/path/to/myicon.svg"/>
-      </mask>
-  </defs>
-  <rect
-      width="100"
-      height="100"
-      style="fill: currentColor"
-      mask="url(#mask-id-myicon)"
-  />
-</svg>
+```bash
+npx svg-sprite --view --view-bust false --view-example --dest=dest assets/icons/*.svg
 ```
 
-If you use an svg sprite, you can replace the `image` tag with the `use` tag:
+If one of your svg-files is called `mail.svg`, you can show the icon using this class:
+
+```css
+.mail-icon {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(currentColor, currentColor);
+  mask-image: url(dest/sprites.svg#mail);
+  mask-size: contain;
+}
+```
+
+In this case, the icon gets the same color as the surrounding text, but you can
+apply any gradient or background image you want.
 
 ```html
-<use xlink:href="/path/to/sprite.svg#myicon" filter="url(#invert)"></use>
+<span class="mail-icon"></span>
 ```
 
 ## Truncate with ellipsis
@@ -535,7 +528,7 @@ aspect-ratio | 9 / 16 | Specify aspect ratio of the element
 <div class="background-image" role="img" aria-label="Alt text"></div>
 ```
 
-The aria-label attribute has [much more](https://html5accessibility.com/stuff/2024/05/22/not-so-short-note-on-aria-label-usage-big-table-edition/) uses.
+The [aria-label attribute](https://html5accessibility.com/stuff/2024/05/22/not-so-short-note-on-aria-label-usage-big-table-edition/) has much more uses.
 
 ## Remove semantics
 
