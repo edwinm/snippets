@@ -403,7 +403,7 @@ If one of your svg-files is called `mail.svg`, you can show the icon using this 
 .mail-icon {
   width: 24px;
   height: 24px;
-  background: linear-gradient(currentColor, currentColor);
+  background: currentColor;
   mask-image: url(dest/sprites.svg#mail);
   mask-size: contain;
 }
