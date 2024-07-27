@@ -56,11 +56,11 @@ additional-name
 family-name
 honorific-suffix
 nickname
+organization-title
 username
 new-password
 current-password
 one-time-code
-organization-title
 organization
 street-address
 address-line1
@@ -93,6 +93,16 @@ bday-year
 sex
 url
 photo
+tel
+tel-country-code
+tel-national
+tel-area-code
+tel-local
+tel-local-prefix
+tel-local-suffix
+tel-extension
+email
+impp
 </pre>
 </details>
 
