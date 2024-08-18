@@ -548,6 +548,29 @@ Remove the semantics from an element
 <h2 role="presentation">Large text, but not a heading</h2>
 ```
 
+## Current page
+
+Don't highlight the current page in a table of contents by only changing the class but use `aria-current`.
+
+```html
+<ol>
+    <li><a href="…">Some page</a></li>
+    <li aria-current="page">Some other page</li>
+</ol>
+```
+
+Then style the current page entry in the table as contents as follows
+
+```css
+[aria-current="page"] {
+    font-weight: bold;
+}
+```
+
+`aria-current` can have the following values: `page`, `step`, `location`, `date`, `time`, `true` and `false`.
+See [MDN: aria-current](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current) 
+for a detailed explanation.
+
 ## Toggle buttons
 
 Make it clear when buttons are toggled on or off.
