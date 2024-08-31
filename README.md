@@ -655,15 +655,16 @@ Check the list below to make sure the site is really ready to be published.
 - Has a proper 404 page been set up for when a invalid url is requested?
 - Some jurisdictions require contact/about/legal info pages
 - The back button always goes to the previous page
-- Is the site accessible? Is the text easy to read? Can you use the site with keyboard only?
-- Does the site still work when the text is enlarged (CTRL-+ or Command-+)
+- Is the text easy to read?
+- Can you use the site with keyboard only?
+- Does the site still work when the text is enlarged? (CTRL-+ or Command-+)
 - Form fields use the autocomplete attribute
 - Every page has a different title (with the generic part at the end)
 - Don't forget the favicon
 - Add an image and description for when the site is shared on social media
 - Add a print style sheet for when it is expected the pages will be printed
 - Add the lang attribute
-- For international sites: the site works with browser autotranslation
+- For international sites in one language: the site works with browser autotranslation
 
 ## Copy paste characters
 
