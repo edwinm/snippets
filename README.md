@@ -519,15 +519,6 @@ div {
 }
 ```
 
-## Useful but lesser known CSS features
-
-property | value | use
---- | --- | ---
-touch-action | manipulation | Prevent click delay by not waiting for possible double click 
-pointer-events | none | Make a top level element behave like it's not there
-object-fit | cover | Specify how an image should be shown in an `img` element
-user-select | none | Prevents text to be selected
-aspect-ratio | 9 / 16 | Specify aspect ratio of the element
 
 ## Use aria-label to provide "alt" for background image
 
@@ -648,22 +639,26 @@ Example for an Atom feed:
 
 Handy properties that are hard to memorize but can sometimes be very useful.
 
-Property | Use | More info
-@layer | Organize your CSS | [MDN: @layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)
-@container | Responsive elements | [MDN: @container](https://developer.mozilla.org/en-US/docs/Web/CSS/@container)
-text-underline-offset: 0.25em | Set the distance between the text and the underline | [MDN: text-underline-offset](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset)
-margin-block: 1lh | Set the margin for the top and bottom of an element | [MDN: margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block)
-margin-trim: block-start | Trim the margin of an element | [MDN: margin-trim](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-trim)
-scroll-margin-top: 2rem | Set the scroll margin for the top of an element | [MDN: scroll-margin-top](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top)
-overscroll-behavior: contain | Prevent overscroll effects | [MDN: overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)
-scrollbar-gutter: stable both-edges | Set the scrollbar gutter | [MDN: scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)
-width: fit-content | Set the width of an element to the width of its content | [MDN: width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
-display: contents | Remove the element from the document tree | [MDN: display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
-aspect-ratio: 16 / 9 | Set the aspect ratio of an element | [MDN: aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)
-object-fit: cover | Specify how an image should be shown in an `img` element | [MDN: object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
-isolation: isolate | Prevent the element from being affected by the z-index of other elements | [MDN: isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation)
-content-visibility: hidden | Hide elements that are not visible on screen | [MDN: content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility)
-contain: size layout paint style | Prevent the element from affecting the layout of the page | [MDN: contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain)
+| Property                            | Use                                                                      | More info                                                                                            |
+|-------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| @layer                              | Organize your CSS                                                        | [MDN: @layer](https://developer.mozilla.org/en-US/docs/Web/CSS/@layer)                               |
+| @container                          | Responsive elements                                                      | [MDN: @container](https://developer.mozilla.org/en-US/docs/Web/CSS/@container)                       |
+| text-underline-offset: 0.25em       | Set the distance between the text and the underline                      | [MDN: text-underline-offset](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset) |
+| margin-block: 1lh                   | Set the margin for the top and bottom of an element                      | [MDN: margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block)                   |
+| margin-trim: block-start            | Trim the margin of an element                                            | [MDN: margin-trim](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-trim)                     |
+| scroll-margin-top: 2rem             | Set the scroll margin for the top of an element                          | [MDN: scroll-margin-top](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top)         |
+| overscroll-behavior: contain        | Prevent overscroll effects                                               | [MDN: overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)     |
+| scrollbar-gutter: stable both-edges | Set the scrollbar gutter                                                 | [MDN: scrollbar-gutter](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter)           |
+| width: fit-content                  | Set the width of an element to the width of its content                  | [MDN: width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)                                 |
+| aspect-ratio: 16 / 9                | Set the aspect ratio of an element                                       | [MDN: aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)                   |
+| object-fit: cover                   | Specify how an image should be shown in an `img` element                 | [MDN: object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)                       |
+| touch-action: manipulation          | Prevent click delay by not waiting for possible double click             | [MDN: touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action)                   |
+| pointer-events: none                | Make a top level element behave like it's not there                      | [MDN: pointer-events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)               |
+| user-select: none                   | Prevents text to be selected                                             | [MDN: user-select](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select)                     |
+| display: contents                   | Remove the element from the document tree                                | [MDN: display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)                             |
+| isolation: isolate                  | Prevent the element from being affected by the z-index of other elements | [MDN: isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation)                         |
+| content-visibility: hidden          | Hide elements that are not visible on screen                             | [MDN: content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility)       |
+| contain: size layout paint style    | Prevent the element from affecting the layout of the page                | [MDN: contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain)                             |
 
 ## Checklist
 
